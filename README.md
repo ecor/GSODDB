@@ -1,4 +1,4 @@
-# GSODDB :Global Summaary of Day (GSOD)  Database source code (R Packege / PostgreSQL Code)
+# GSODDB :Global Summaary of Day (GSOD)  Database source code (R Package / PostgreSQL Code)
 
 This  database contains a schema with 3 tables (see below). 
 
