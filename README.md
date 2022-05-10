@@ -1,4 +1,4 @@
-# SuSnowDB : Bavarian Forest / Sumava area Snow Observations Database source code (R Packege / PostgreSQL Code)
+# GSODDB :Global Summaary of Day (GSOD)  Database source code (R Packege / PostgreSQL Code)
 
 This  database contains a schema with 3 tables (see below). 
 
@@ -44,24 +44,21 @@ This  database contains a schema with 3 tables (see below).
 
 An example contains snow depth observations pulic access from : 
 
-* DWD : https://cdc.dwd.de/portal/ Terms of use: https://opendata.dwd.de/climate_environment/CDC/Terms_of_use.pdf
-* CHMI : https://www.chmi.cz/?l=en ( https://www.chmi.cz/historicka-data/pocasi/denni-data/Denni-data-dle-z.-123-1998-Sb# )
-
-
+* Lorem Ipsum : https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00516 Terms of use: link gsod
 
 
 
 ## Installation 
 
 
-Package `SuSnowDB` can be installed through R console (currently) private repository):
+Package `GSODDB` can be installed through R console (currently) private repository):
 
 
 ```
-remotes::install_github("ecor/SuSnowDB")
+remotes::install_github("ecor/GSODDB")
 ```
 
 
-Date: 2022-02-26
+Date: 2022-05-10
 
 
