@@ -44,7 +44,7 @@ This  database contains a schema with 3 tables (see below).
 
 An example contains daily weather data that can pulicly accessed from : 
 
-* Global Summary Of the Day (GSOD) dsataset : https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00516 Terms of use: lorem ipsum.
+* Global Summary Of the Day (GSOD) dsataset : https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00516 Terms of use: see Constains on the GSOD home page.
 
 Data are downloaded though the **GSODR** package (https://CRAN.R-project.org/package=GSODR).  Units are converted from from United States Customary System ('USCS') units to International System of Units ('SI'). See package description for more datails. 
 
