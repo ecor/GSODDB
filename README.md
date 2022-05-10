@@ -42,10 +42,11 @@ This  database contains a schema with 3 tables (see below).
 
 ## Examples
 
-An example contains snow depth observations pulic access from : 
+An example contains daily weather data that can pulicly accessed from : 
 
-* Lorem Ipsum : https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00516 Terms of use: link gsod
+* Global Summary Of the Day (GSOD) dsataset : https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00516 Terms of use: lorem ipsum.
 
+Data are downloaded though the **GSODR** package (https://CRAN.R-project.org/package=GSODR).  Units are converted from from United States Customary System ('USCS') units to International System of Units ('SI'). See package description for more datails. 
 
 
 ## Installation 
