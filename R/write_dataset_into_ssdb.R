@@ -28,7 +28,7 @@ NULL
 ###https://github.com/tidyverse/dplyr/issues/3026
 
 
-write_dataset_into_ssdb <- function(conn,dataset,append=TRUE,new=FALSE,sql_files=system.file("sql/create_or_replace_functions.sql",package="SuSnowDB"),...) {
+write_dataset_into_ssdb <- function(conn,dataset,append=TRUE,new=FALSE,sql_files=system.file("sql/create_or_replace_functions.sql",package="GSODDB"),...) {
   
   if (new==TRUE) append <- FALSE;
   

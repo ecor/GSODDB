@@ -1,12 +1,12 @@
-Package: SuSnowDB
+Package: GSODDB
 Maintainer: Emanuele Cordano <emanuele.cordano@gmail.com>
 License: GPL (>= 3)
-Title: SuSnowDB: Geospatial Database for Climate Data
+Title: Geospatial Database for Climate Data
 Type: Package
 Author: Emanuele Cordano
-Description: Creation for a timescale/postgis geospatial database for climate data. An application with snow data of Bavarian Forest/Sumava National Parks Area is Presented. 
+Description: Creation for a timescale/postgis geospatial database for climate data. An application with GSODV weather data is presented. 
 Version: 0.0.8
-Date: 2022-04-21
+Date: 2022-05-10
 Repository: CRAN
 Depends: magrittr,dplyr,purrr,stringr,sf,reshape2,rdwd,RSMET,zoo
 Imports: rlang,DBI,GSODR,methods,rgdal

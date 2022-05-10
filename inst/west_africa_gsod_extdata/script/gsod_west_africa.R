@@ -8,7 +8,7 @@ library(GSODR)
 library(magrittr)
 
 
-west_africa <- system.file("west_africa_gsod_extdata/west_africa.csv",package="SuSnowDB") %>% read_csv()
+west_africa <- system.file("west_africa_gsod_extdata/west_africa.csv",package="GSODDB") %>% read_csv()
 
 year=2015:2017 ###1950:2020
 
@@ -18,7 +18,7 @@ file <- "/home/ecor/activity/2021/local/SuSnowDB/inst/west_africa_gsod_extdata/g
 write_csv(out,file=file)
 
 
-###west_africa <- system.file("west_africa_gsod_extdata/west_africa.csv",package="SuSnowDB") %>% read_csv()
+###west_africa <- system.file("west_africa_gsod_extdata/west_africa.csv",package="GSODDB") %>% read_csv()
 
 cc <- system.time(out <- get_GSOD(year=year,country=west_africa$ISO_3166_1[10]))
 

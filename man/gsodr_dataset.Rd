@@ -18,7 +18,7 @@ gsodr_dataset(
   crs = 4326,
  
     measurement_types = read.table(system.file("west_africa_gsod_extdata/gsod_variable_measurement_types_v1.csv",
-    package = "SuSnowDB"), header = TRUE, sep = ",", stringsAsFactors = FALSE)
+    package = "GSODDB"), header = TRUE, sep = ",", stringsAsFactors = FALSE)
 )
 }
 \arguments{
@@ -39,7 +39,7 @@ Create GSOD Weather Dataset from (UDER DEVELOPMENT)
 }
 \examples{
  library(readr)
- x <- system.file("west_africa_gsod_extdata/gsod_bf.csv",package="SuSnowDB") \%>\% read_csv()
+ x <- system.file("west_africa_gsod_extdata/gsod_bf.csv",package="GSODDB") \%>\% read_csv()
  out <- gsodr_dataset(x=x)
  
  \dontrun{

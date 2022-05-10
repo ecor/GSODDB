@@ -20,18 +20,18 @@ NULL
 #' 
 #' @export
 #' @examples
-#'  data_dir <- system.file("snow_extdata",package="SuSnowDB")
+#'  data_dir <- system.file("snow_extdata",package="GSODDB")
 #'  \dontrun{
 #'  out <- meteotrentino_smet_dataset(smet_files=c("T0175","T0179"))
 #'  }
 
-meteotrentino_smet_dataset <- function(data_dir=system.file("smet_extdata/meteotrentino",package="SuSnowDB"),smet_files=NULL,crs=4326,
+meteotrentino_smet_dataset <- function(data_dir=system.file("smet_extdata/meteotrentino",package="GSODDB"),smet_files=NULL,crs=4326,
                                        country_name="Italy",
                                        country_code_iso_3166_1="IT",
                                        country_code_iso_3166_2="IT-TN",
                                        location_source="MeteoTrentino",
                                        location_url="http://storico.meteotrentino.it/web.htm?ppbm=%s&rs&1&df",
-                                       measurement_types=read.table(system.file("smet_extdata/smet_variables.csv",package="SuSnowDB"),header=TRUE,sep=",",stringsAsFactors = FALSE),
+                                       measurement_types=read.table(system.file("smet_extdata/smet_variables.csv",package="GSODDB"),header=TRUE,sep=",",stringsAsFactors = FALSE),
                                        use_limitations="https://dati.trentino.it/dataset/dati-recenti-delle-stazioni-meteo",
                                        location_description="https://dati.trentino.it/dataset/dati-recenti-delle-stazioni-meteo",
                                        ...){ 

@@ -35,13 +35,13 @@ NULL
 #'
 #'@export
 #'@examples
-#'  data_dir <- system.file("snow_extdata",package="SuSnowDB")
+#'  data_dir <- system.file("snow_extdata",package="GSODDB")
 #'  \dontrun{
 #'  out <- sumava_snow_dataset()
 #'  is_dataset(out)
 #'  }
 
-sumava_snow_dataset <- function(data_dir=system.file("snow_extdata",package="SuSnowDB"),remove_multipoints=TRUE,snap_distance=5){ ##'/home/ecor/activity/2021/local/SuSnowDB/inst/snow_extdata') { 
+sumava_snow_dataset <- function(data_dir=system.file("snow_extdata",package="GSODDB"),remove_multipoints=TRUE,snap_distance=5){ ##'/home/ecor/activity/2021/local/SuSnowDB/inst/snow_extdata') { 
   
   ## DA COMPLETARE ... 
   if ((data_dir %>% str_sub(-1,-1))=="/") data_dir <- data_dir %>% str_sub(1,-2)

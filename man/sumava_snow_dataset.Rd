@@ -5,7 +5,7 @@
 \title{Create Sumava Snow Dataset from DWD and CHMI sources}
 \usage{
 sumava_snow_dataset(
-  data_dir = system.file("snow_extdata", package = "SuSnowDB"),
+  data_dir = system.file("snow_extdata", package = "GSODDB"),
   remove_multipoints = TRUE,
   snap_distance = 5
 )
@@ -21,7 +21,7 @@ sumava_snow_dataset(
 Create Sumava Snow Dataset from DWD and CHMI sources
 }
 \examples{
- data_dir <- system.file("snow_extdata",package="SuSnowDB")
+ data_dir <- system.file("snow_extdata",package="GSODDB")
  \dontrun{
  out <- sumava_snow_dataset()
  is_dataset(out)

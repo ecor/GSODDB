@@ -36,7 +36,7 @@ Is it a dataset formatted for a SuSnowDB ? Are they all datasets formatted for a
 }
 \examples{
  library(readr)
- x <- system.file("west_africa_gsod_extdata/gsod_bf.csv",package="SuSnowDB") \%>\% read_csv()
+ x <- system.file("west_africa_gsod_extdata/gsod_bf.csv",package="GSODDB") \%>\% read_csv()
  val <- gsodr_dataset(x=x)
  out <- is_dataset(val)
  

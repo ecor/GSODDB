@@ -6,7 +6,7 @@ library(magrittr)
 library(GSODR)
 
 
-countries <- system.file("west_africa_gsod_extdata/west_africa.csv",package="SuSnowDB") %>% read_csv()
+countries <- system.file("west_africa_gsod_extdata/west_africa.csv",package="GSODDB") %>% read_csv()
 outfile <- '/home/ecor/activity/2021/local/data/gsod/%s.rds'
 icountries <- countries$ISO_3166_1
 icountry <- "SN"

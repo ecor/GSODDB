@@ -55,7 +55,7 @@ dbDisconnect(conn)
 
 library(dygraphs)
 
-ssdb <- system.file('sumava_extdata/sumava.rds',package="SuSnowDB") \%>\% readRDS()
+ssdb <- system.file('sumava_extdata/sumava.rds',package="GSODDB") \%>\% readRDS()
 ####ssdb <- '/home/ecor/activity/2022/local/shiny/SuSnowApp/ext-data/sumava.rds' \%>\% readRDS()
 table_name <- get_value_table_names_from_ssdb(ssdb)
 out2 <- get_multitable_measurements_from_ssdb(ssdb)

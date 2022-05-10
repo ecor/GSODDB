@@ -31,9 +31,9 @@ Crop or get a dataset from ssdb
 library(magrittr)
 library(raster)
 
-ssdb <- system.file('sumava_extdata/sumava.rds',package="SuSnowDB") \%>\% readRDS()
+ssdb <- system.file('sumava_extdata/sumava.rds',package="GSODDB") \%>\% readRDS()
 
-crop_ext <- system.file('sumava_extdata/sumava_v2_extent.tif',package="SuSnowDB")  \%>\% raster() 
+crop_ext <- system.file('sumava_extdata/sumava_v2_extent.tif',package="GSODDB")  \%>\% raster() 
 
 ssdb_cropped <- crop_dataset_from_ssdb(ssdb,crop=crop_ext)
 

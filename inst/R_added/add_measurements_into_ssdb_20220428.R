@@ -41,7 +41,7 @@ NULL
 #' dbDisconnect(conn)
 #' 
 #' }
-add_measurements_into_ssdb <- function (conn,measurements,new=FALSE,append=!new,sql_files=system.file("sql/create_or_replace_functions.sql",package="SuSnowDB"),
+add_measurements_into_ssdb <- function (conn,measurements,new=FALSE,append=!new,sql_files=system.file("sql/create_or_replace_functions.sql",package="GSODDB"),
                                     warn=TRUE,err=!warn,
                                     nn_measurements=default_nn_measurements(),...) {
   

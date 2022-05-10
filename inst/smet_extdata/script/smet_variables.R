@@ -2,7 +2,7 @@ library(readr)
 library(magrittr)
 library(stringr)
 library(purrr)
-smet_variables <- system.file("smet_extdata/smet_variables.csv",package="SuSnowDB") %>% read_csv()
+smet_variables <- system.file("smet_extdata/smet_variables.csv",package="GSODDB") %>% read_csv()
 smet_variables_old <- "/home/ecor/activity/2021/local/SuSnowDB/inst/smet_extdata/smet_variables_old.csv" %>% read_csv()
 smet_variables$variable_description <- smet_variables$description
 tt <- smet_variables$description %>% str_split(pattern="[(]") %>% map(function(x){x[[1]]}) %>% str_trim() %>% unlist()

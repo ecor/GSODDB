@@ -34,9 +34,9 @@ Union of one or more Weather Datasets from (UDER DEVELOPMENT)
 }
 \examples{
  library(readr)
- x <- system.file("west_africa_gsod_extdata/gsod_bf_v2.csv",package="SuSnowDB") \%>\% read_csv() \%>\% gsodr_dataset()
- y <- system.file("west_africa_gsod_extdata/gsod_ml.csv",package="SuSnowDB") \%>\% read_csv() \%>\% gsodr_dataset()
- z <- system.file("west_africa_gsod_extdata/gsod_sn.csv",package="SuSnowDB") \%>\% read_csv() \%>\% gsodr_dataset()
+ x <- system.file("west_africa_gsod_extdata/gsod_bf_v2.csv",package="GSODDB") \%>\% read_csv() \%>\% gsodr_dataset()
+ y <- system.file("west_africa_gsod_extdata/gsod_ml.csv",package="GSODDB") \%>\% read_csv() \%>\% gsodr_dataset()
+ z <- system.file("west_africa_gsod_extdata/gsod_sn.csv",package="GSODDB") \%>\% read_csv() \%>\% gsodr_dataset()
 
  out <- datasets_union(x,y,z)
  

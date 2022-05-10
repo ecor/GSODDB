@@ -6,7 +6,7 @@ library(magrittr)
 
 source('~/activity/2021/local/SuSnowDB/R/gsodr_dataset.R')
 
-countries <- system.file("west_africa_gsod_extdata/west_africa.csv",package="SuSnowDB") %>% read_csv()
+countries <- system.file("west_africa_gsod_extdata/west_africa.csv",package="GSODDB") %>% read_csv()
 icountries <- countries$ISO_3166_1
 
 years <- (1991:2020)[10]

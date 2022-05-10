@@ -34,7 +34,7 @@ NULL
 #' dbDisconnect(conn)
 #' 
 #' }
-add_locations_into_ssdb <- function (conn,locations,new=FALSE,append=!new,sql_files=system.file("sql/create_or_replace_functions.sql",package="SuSnowDB"),
+add_locations_into_ssdb <- function (conn,locations,new=FALSE,append=!new,sql_files=system.file("sql/create_or_replace_functions.sql",package="GSODDB"),
                                     warn=TRUE,err=!warn,
                                     nn_locations=default_nn_locations(),...) {
   ##### c("location_code","location_code0","location_name","altitude" ,"city_name",             

@@ -9,7 +9,7 @@ write_dataset_into_ssdb(
   dataset,
   append = TRUE,
   new = FALSE,
-  sql_files = system.file("sql/create_or_replace_functions.sql", package = "SuSnowDB"),
+  sql_files = system.file("sql/create_or_replace_functions.sql", package = "GSODDB"),
   ...
 )
 }

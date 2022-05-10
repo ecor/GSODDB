@@ -5,7 +5,7 @@
 \title{Create MeteoTrentino Weather Dataset from a directory of SMET files downloaded by the Trentino Open Data Portal}
 \usage{
 meteotrentino_smet_dataset(
-  data_dir = system.file("smet_extdata/meteotrentino", package = "SuSnowDB"),
+  data_dir = system.file("smet_extdata/meteotrentino", package = "GSODDB"),
   smet_files = NULL,
   crs = 4326,
   country_name = "Italy",
@@ -14,7 +14,7 @@ meteotrentino_smet_dataset(
   location_source = "MeteoTrentino",
   location_url = "http://storico.meteotrentino.it/web.htm?ppbm=\%s&rs&1&df",
   measurement_types = read.table(system.file("smet_extdata/smet_variables.csv", package
-    = "SuSnowDB"), header = TRUE, sep = ",", stringsAsFactors = FALSE),
+    = "GSODDB"), header = TRUE, sep = ",", stringsAsFactors = FALSE),
  
     use_limitations = "https://dati.trentino.it/dataset/dati-recenti-delle-stazioni-meteo",
  
@@ -41,7 +41,7 @@ meteotrentino_smet_dataset(
 Create MeteoTrentino Weather Dataset from a directory of SMET files downloaded by the Trentino Open Data Portal
 }
 \examples{
- data_dir <- system.file("snow_extdata",package="SuSnowDB")
+ data_dir <- system.file("snow_extdata",package="GSODDB")
  \dontrun{
  out <- meteotrentino_smet_dataset(smet_files=c("T0175","T0179"))
  }
