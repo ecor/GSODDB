@@ -33,7 +33,8 @@ get_locations_from_ssdb <- function (conn,...) {
 
   cc <- class(conn)
   out <- NULL
-  if (class(conn)=="PostgreSQLConnection") {
+#####  if (class(conn)=="PostgreSQLConnection") {
+  if (inherits(conn,"PostgreSQLConnection")) {
     out <- st_read(conn,"locations",...)
   } else if (cc=="list") {
     
