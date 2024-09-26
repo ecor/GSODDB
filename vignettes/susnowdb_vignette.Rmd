@@ -1,10 +1,10 @@
 ---
-title: "SuSnowDB Schema"
+title: "GSODDB/SuSnowDB Schema"
 author: "Emanuele Cordano"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Databese Schema Decription}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

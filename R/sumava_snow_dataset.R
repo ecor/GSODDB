@@ -35,13 +35,15 @@ NULL
 #'
 #'@export
 #'@examples
-#'  data_dir <- system.file("snow_extdata",package="GSODDB")
+#'  data_dir <- system.file("snowdb",package="GSODDB")
 #'  \dontrun{
 #'  out <- sumava_snow_dataset()
 #'  is_dataset(out)
 #'  }
 
-sumava_snow_dataset <- function(data_dir=system.file("snow_extdata",package="GSODDB"),remove_multipoints=TRUE,snap_distance=5){ ##'/home/ecor/activity/2021/local/SuSnowDB/inst/snow_extdata') { 
+sumava_snow_dataset <- function(data_dir=system.file("snowdb",package="GSODDB"),remove_multipoints=TRUE,snap_distance=5){ 
+  
+  ##/home/ecor/activity/2021/local/SuSnowDB/inst/snowdb 
   
   ## DA COMPLETARE ... 
   if ((data_dir %>% str_sub(-1,-1))=="/") data_dir <- data_dir %>% str_sub(1,-2)
@@ -320,7 +322,7 @@ sumava_snow_dataset <- function(data_dir=system.file("snow_extdata",package="GSO
   measurements$description <- as.character(NA)
   #### ADD DATA DWD 
   ##library(rdwd)  
-  data(geoIndex)  
+  data(geoIndex,envir=environment())  
   
   
   

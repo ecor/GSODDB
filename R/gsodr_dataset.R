@@ -17,7 +17,8 @@ NULL
 #' @export
 #' @examples
 #'  library(readr)
-#'  x <- system.file("west_africa_gsod_extdata/gsod_bf.csv",package="GSODDB") %>% read_csv()
+#'  x <- system.file("west_africa_gsod_extdata/gsod_bf.csv"
+#'   ,package="GSODDB") %>% read_csv()
 #'  out <- gsodr_dataset(x=x)
 #'  
 #'  \dontrun{
@@ -26,9 +27,20 @@ NULL
 
 gsodr_dataset <- function(x=NULL,...,description_url="https://www7.ncdc.noaa.gov/CDO/GSOD_DESC.txt",location_code0="GSOD_%s",
                           variable_code0="GSODR_%s",
-                          location_url="https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc%3AC00516/html#",
-                          use_limitations='The following data and products may have conditions placed on their international commercial use. They can be used within the U.S. or for non-commercial international activities without restriction. The non-U.S. data cannot be redistributed for commercial purposes. Re-distribution of these data by others must provide this same notification." WMO Resolution 40. NOAA Policy',location_source="GSOD",crs=4326,measurement_types=read.table(system.file("west_africa_gsod_extdata/gsod_variable_measurement_types_v1.csv",package="GSODDB"),header=TRUE,sep=",",stringsAsFactors = FALSE)) {
+                          
+    location_url="default",
+    
+                          use_limitations='default',
+    location_source="GSOD",
+    crs=4326,
+    measurement_types="default") {
   
+  
+  if (measurement_types=="default") measurement_types=read.table(system.file("west_africa_gsod_extdata/gsod_variable_measurement_types_v1.csv",package="GSODDB"),
+                               header=TRUE,sep=",",stringsAsFactors = FALSE)
+  if (use_limitations=="default") use_limitations='The following data and products may have conditions placed on their international commercial use. They can be used within the U.S. or for non-commercial international activities without restriction. The non-U.S. data cannot be redistributed for commercial purposes. Re-distribution of these data by others must provide this same notification." WMO Resolution 40. NOAA Policy'
+  if (location_url=="default") location_url="https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc%3AC00516/html#"
+  use_limitations='The following data and products may have conditions placed on their international commercial use. They can be used within the U.S. or for non-commercial international activities without restriction. The non-U.S. data cannot be redistributed for commercial purposes. Re-distribution of these data by others must provide this same notification." WMO Resolution 40. NOAA Policy'
    if (is.null(x)) x <- get_GSOD(...)
    if (nrow(x)==0) x <- NULL
    if (is.null(x)) return(x)

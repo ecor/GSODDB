@@ -10,6 +10,7 @@ Date: 2022-05-10
 Repository: CRAN
 Depends: magrittr,dplyr,purrr,stringr,sf,reshape2,rdwd,RSMET,zoo
 Imports: rlang,DBI,GSODR,methods
-Suggests: RPostgreSQL,readr,dygraphs,raster
+Suggests: RPostgreSQL,readr,dygraphs,raster,knitr
+VignetteBuilder: knitr
 RoxygenNote: 7.3.2
 Encoding: UTF-8

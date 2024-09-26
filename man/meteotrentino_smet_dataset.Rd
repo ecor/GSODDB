@@ -40,7 +40,7 @@ meteotrentino_smet_dataset(
 Create MeteoTrentino Weather Dataset from a directory of SMET files downloaded by the Trentino Open Data Portal
 }
 \examples{
- data_dir <- system.file("snow_extdata",package="GSODDB")
+ data_dir <- system.file("snowdb",package="GSODDB")
  \dontrun{
  out <- meteotrentino_smet_dataset(smet_files=c("T0175","T0179"))
  }
